@@ -1,7 +1,7 @@
 # Power-BI-Logistics-Dashboard
 
 ## INTRODUCTION
-The aim of this project is to exhibit my skills in analyzing and visualizing social media (Twitter) data with user friendly navigation using Power BI.
+This project aims to exhibit my skills in analyzing and visualizing social media (Twitter) data with user friendly navigation using Power BI.
 
 The Report consists of three pages:
 
@@ -13,12 +13,10 @@ Content Analysis
 ## PROBLEM STATEMENT
 To analyze and visualize tweets, and trend of hastags:
 
-#30DAYS OF LEAERNING
-#NG30 DAYS OF LEARNING
 The analysis will also include tools mentioned and Word Cloud associated to the hashtags.
 
 ## SKILLS DEMONSTRATED
-
+![](Measures_LD.png)
 ## DATA SOURCING
 
 ## DATA TRANSFORMATION
@@ -34,10 +32,11 @@ The last column was created for the time format of the source date column and na
 ![image](https://github.com/zezor/Power-BI-Logistics-Dashboard/assets/39943217/d664b2e2-99ce-4c82-b222-ee34e6acbfa8)
 
 ## MODELLING
-![]()
+![](Model_LD.png)
 
 ## ANALYSIS AND VISUALIZATION
-
+![](Report_LD.png)
 ## CONCLUSION AND RECOMMENDATION
+
 
 
