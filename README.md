@@ -35,8 +35,13 @@ The last column was created for the time format of the source date column and na
 ![](Model_LD.png)
 
 ## ANALYSIS AND VISUALIZATION
-![](Report_LD.png)
-## CONCLUSION AND RECOMMENDATION
+### Overall OTIF
+![](OTIF_LD.png)
 
+### OTIF By Top Clients
+![](OTIF_by_clients.png)
+
+## CONCLUSION AND RECOMMENDATION
+![](Report_LD.png)
 
 
