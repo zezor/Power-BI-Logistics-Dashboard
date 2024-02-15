@@ -1,7 +1,6 @@
 # Power-BI-Logistics-Dashboard
 
 ## INTRODUCTION
-We are process analysts and need to 
 This project aims to develop a Data Analysis tool for analyzing the overall situation of clients and carriers OTIF using Power BI.
 
 The Report consists of three pages:
