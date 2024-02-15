@@ -1,19 +1,22 @@
 # Power-BI-Logistics-Dashboard
 
 ## INTRODUCTION
-This project aims to exhibit my skills in analyzing and visualizing social media (Twitter) data with user friendly navigation using Power BI.
+We are process analysts and need to 
+This project aims to develop a Data Analysis tool for analyzing the overall situation of clients and carriers OTIF using Power BI.
 
 The Report consists of three pages:
 
-Home Page
-Tweet Summary
-Content Analysis
+A report page
+Maps
+Graphs
 
 
 ## PROBLEM STATEMENT
-To analyze and visualize tweets, and trend of hastags:
+- Identify carriers' OTIF performance to present to managers
 
-The analysis will also include tools mentioned and Word Cloud associated to the hashtags.
+- Check the 5 worst OTIF accomplishment for clients so the team can create action plans for continuous improvement and immediately enhance their customer experience.
+
+- Identify the origin of late deliveries.
 
 ## SKILLS DEMONSTRATED
 ![](Measures_LD.png)
