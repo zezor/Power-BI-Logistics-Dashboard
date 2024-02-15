@@ -1,7 +1,7 @@
 # Power-BI-Logistics-Dashboard
 
 ## INTRODUCTION
-This project aims to develop a Data Analysis tool for analyzing the overall situation of clients and carriers OTIF using Power BI.
+This project aims to develop a Data Analysis tool for analyzing the overall situation of clients and carriers **On Time In Full (OTIF)** using Power BI.
 
 The Report consists of three pages:
 
@@ -13,31 +13,57 @@ Graphs
 ## PROBLEM STATEMENT
 - Identify carriers' OTIF performance to present to managers
 
-- Check the 5 worst OTIF accomplishment for clients so the team can create action plans for continuous improvement and immediately enhance their customer experience.
+- Check the 5 worst OTIF accomplishments for clients so the team can create action plans for continuous improvement and immediately enhance their customer experience.
 
 - Identify the origin of late deliveries.
 
 ## SKILLS DEMONSTRATED
+
+**DAX** - Five measures were created using Dax 
+
+**OTIF** - "OTIF = [On Time] * [In Full]"
+
+**Count of Orders** - "Count of Orders = COUNTROWS(Invoices)"
+
+**On Time** = 
+CALCULATE(
+    [Count of Orders],
+    Invoices[Late or Not] = "On Time")
+    /
+    [Count of Orders]
+
+**In Full** = 
+CALCULATE(
+    [Count of Orders],
+    Invoices[Late or Not] <> "Not Delivered")
+    /
+    [Count of Orders]
+
 ![](Measures_LD.png)
 ## DATA SOURCING
-
+The Data was extracted from the Kaggle data set
 ## DATA TRANSFORMATION
-Data cleaning and transformation was carried out using Power Query. After scrutinizing all the columns, they were found to be valid and devoid of empty cells and errors. However, It was highly important that I transformed the [Date] column which was in the 'date/time' format.
+Data cleaning and transformation were carried out using Power Query. After scrutinizing all the columns, they were found valid and devoid of empty cells and errors. To calculate the deliveries on time and not on time we needed to know the delivery date and expected delivery date 
 
-Therefore, I created 4 new columns all extracted from the source [Date] column.
+Therefore, I created a new column to extract the Expected Delivery Date by combining the Collection Date and Contracted Term
 
-The first cloumn contained the date in 'date' format (i.e dd/mm/yyy) and named it "New Date".
-The second column was also extracted from the source [Date] column where I extracted the Month hierarchy and named it 'Month Name'.
-Day Name was also extracted to constitute the third column and named Day Name column.
-The last column was created for the time format of the source date column and named Time.
+A second column was also extracted from the Delivery Date and Expected Delivery Date to know Late or Not Late deliveries 
+
 
 ![image](https://github.com/zezor/Power-BI-Logistics-Dashboard/assets/39943217/d664b2e2-99ce-4c82-b222-ee34e6acbfa8)
 
 ## MODELLING
+The data was modelled to find the relationship between various tables
+
+The invoice table is marked as the fact table with the Carrier and ClientBase tables being dimension tables
+
 ![](Model_LD.png)
 
 ## ANALYSIS AND VISUALIZATION
 ### Overall OTIF
+The main KPI focused on in this analysis is the OTIF. On-time in full (OTIF) is a supply chain metric for measuring performance in the logistics industry. OTIF generally refers to a supplier's ability to deliver product within prescribed delivery windows and at full quantities ordered.
+From the tile below, the business under consideration had an OTIF of 61.07%. This will be compared with the targeted OTIF KPI to determine if the business is doing well.
+
 ![](OTIF_LD.png)
 
 ### OTIF By Top Clients
